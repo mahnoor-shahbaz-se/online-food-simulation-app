@@ -29,7 +29,7 @@ String handling and formatted console output
 ## How to Run the Project
 1. Download or clone the repository
 2. Open the project in IntelliJ IDEA
-3. Run the `FoodApp.java` file
+3. Run the `OnlineFoodSimulationApp.java` file
 4. Select a restaurant from the menu
 5. Enter item codes and quantities when prompted
 6. View the generated receipt and final bill in the console
