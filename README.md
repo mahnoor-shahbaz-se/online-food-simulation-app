@@ -1,45 +1,93 @@
-# Online Food Simulation App (Java)
+# 🍔 Online Food Simulation App
 
-A console-based Java application that simulates an online food ordering system with multiple restaurants, menu management, bill calculation, and discount functionality.
+A console-based Java application simulating a real-world multi-restaurant food ordering system — complete with menu browsing, item ordering, input validation, automatic discounts, and itemized receipt generation.
 
-## Overview
-This project was built to practice programming fundamentals, problem solving, and modular programming using Java.
+---
 
-The application allows users to choose a restaurant, browse menus, place orders using item codes, calculate subtotals, apply discounts, and generate a formatted receipt.
+## 📸 Sample Output
+<img width="428" height="411" alt="image" src="https://github.com/user-attachments/assets/5df74134-2f0e-4d47-96c5-de4574783910" />
 
-## Features
-- Multiple restaurant selection
-- Separate menus for burgers, pizza, and desi food
-- Menu display with item codes and prices
-- Item ordering using unique codes
-- Input validation for item codes and quantities
-- Automatic subtotal calculation
-- Discount application on orders above a limit
-- Formatted receipt generation
-- Modular functions for cleaner program structure
+---
 
-## Concepts Used
-Java fundamentals  
-Control structures (if/else, loops, while)  
-Arrays and 2D arrays  
-Functions and modular programming  
-Input validation and error handling  
-String handling and formatted console output  
+## ✨ Features
 
-## How to Run the Project
-1. Download or clone the repository
-2. Open the project in IntelliJ IDEA
-3. Run the `OnlineFoodSimulationApp.java` file
-4. Select a restaurant from the menu
-5. Enter item codes and quantities when prompted
-6. View the generated receipt and final bill in the console
+- 🏪 **Multi-restaurant selection** — Burger House, Pizza Palace, Desi Delight
+- 📋 **Separate menus** per restaurant with item codes and prices
+- ✅ **Input validation** — rejects invalid codes and zero/negative quantities
+- 🧾 **Itemized receipt** with subtotal, discount, and final bill
+- 💸 **Auto discount** — 10% off on orders above PKR 3000
+- 🧩 **Modular design** — clean separation of functions
 
-## Future Improvements
-GUI version using Java Swing  
-File handling for saving order history  
-Delivery tracking simulation  
-Database integration for menu and customer records  
-Online payment simulation  
+---
 
-## Author
-Mahnoor Shahbaz
+## 🛠️ Tech & Concepts Used
+
+| Concept | Applied |
+|--------|---------|
+| Java Fundamentals | Variables, loops, conditionals |
+| Arrays & 2D Arrays | Menu data storage |
+| Functions / Methods | Modular code structure |
+| Input Validation | While loops + Scanner |
+| String Handling | Item lookup and display |
+| Formatted Output | Receipt generation |
+
+---
+
+## 🚀 How to Run
+
+### ✅ Step 1 — Install Java (One Time Only)
+1. Go to 👉 https://www.java.com/en/download/
+2. Click **Download Java**
+3. Install it like any normal program (Next → Next → Finish)
+4. **Restart your computer** after installing
+
+---
+
+### ✅ Step 2 — Download the Project
+Open **Command Prompt** (search CMD in Windows search bar) and paste this:
+```bash
+git clone https://github.com/mahnoor-shahbaz-se/online-food-simulation-app.git
+```
+
+---
+
+### ✅ Step 3 — Go Into the Project Folder
+```bash
+cd online-food-simulation-app
+```
+Then go into the Code folder:
+```bash
+cd Code
+```
+
+---
+
+### ✅ Step 4 — Compile the Program
+```bash
+javac OnlineFoodSimulationApp.java
+```
+> This turns the code into something your computer can run. You'll see no output if it works — that's normal! ✅
+
+---
+
+### ✅ Step 5 — Run the Program
+```bash
+java OnlineFoodSimulationApp
+```
+> The food ordering menu will appear. Follow the instructions on screen!
+---
+
+## 🔮 Future Improvements
+
+- [ ] GUI version using Java Swing
+- [ ] File handling to save order history
+- [ ] Database integration for menus and customers
+- [ ] Online payment simulation
+- [ ] Delivery tracking system
+
+---
+
+## 👩‍💻 Author
+
+**Mahnoor Shahbaz**  
+🔗 [LinkedIn](https://www.linkedin.com/in/mahnoor-shahbaz-se/) &nbsp;|&nbsp; 📧 [mahnoorshahbaz86@gmail.com](mailto:mahnoorshahbaz86@gmail.com)
