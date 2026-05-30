@@ -5,6 +5,7 @@ A console-based Java application simulating a real-world multi-restaurant food o
 ---
 
 ## 📸 Sample Output
+
 <img width="428" height="411" alt="image" src="https://github.com/user-attachments/assets/5df74134-2f0e-4d47-96c5-de4574783910" />
 
 ---
@@ -55,10 +56,6 @@ git clone https://github.com/mahnoor-shahbaz-se/online-food-simulation-app.git
 ```bash
 cd online-food-simulation-app
 ```
-Then go into the Code folder:
-```bash
-cd Code
-```
 
 ---
 
@@ -75,6 +72,7 @@ javac OnlineFoodSimulationApp.java
 java OnlineFoodSimulationApp
 ```
 > The food ordering menu will appear. Follow the instructions on screen!
+
 ---
 
 ## 🔮 Future Improvements
@@ -89,5 +87,5 @@ java OnlineFoodSimulationApp
 
 ## 👩‍💻 Author
 
-**Mahnoor Shahbaz**  
+**Mahnoor Shahbaz**
 🔗 [LinkedIn](https://www.linkedin.com/in/mahnoor-shahbaz-se/) &nbsp;|&nbsp; 📧 [mahnoorshahbaz86@gmail.com](mailto:mahnoorshahbaz86@gmail.com)
