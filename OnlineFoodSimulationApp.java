@@ -37,22 +37,50 @@ public class OnlineFoodSimulationApp {
         return desiMenu;
     }
 
+    static String padRight(String text, int width) {
+        while (text.length() < width) {
+            text += " ";
+        }
+        return text;
+    }
     // ─── DISPLAY AVAILABLE RESTAURANTS ───────────────────────
     static void displayRestaurants() {
-        System.out.println("\n=== SELECT A RESTAURANT ===");
+
+        System.out.println("\n====================================");
+        System.out.println("         SELECT A RESTAURANT");
+        System.out.println("====================================");
+
         System.out.println("1. Burger House");
         System.out.println("2. Pizza Palace");
         System.out.println("3. Desi Delight");
-    }
 
+        System.out.println("====================================");
+    }
     // ─── DISPLAY MENU ITEMS WITH CODES AND PRICES ─────────────
     static void displayMenu(String[][] menu) {
-        System.out.println("\n" + String.format("%-6s %-20s %s", "Code", "Item", "Price (PKR)"));
-        System.out.println(String.format("%-6s %-20s %s", "----", "----", "-----------"));
+
+        System.out.println("\n==============================================");
+        System.out.println("                    MENU");
+        System.out.println("==============================================");
+
+        System.out.println(
+                padRight("Code", 8) +
+                        padRight("Item", 25) +
+                        "Price"
+        );
+
+        System.out.println("==============================================");
+
         for (int i = 0; i < menu.length; i++) {
-            System.out.println(String.format("%-6s %-20s %s",
-                    menu[i][0], menu[i][1], menu[i][2]));
+
+            System.out.println(
+                    padRight(menu[i][0], 8) +
+                            padRight(menu[i][1], 25) +
+                            "PKR " + menu[i][2]
+            );
         }
+
+        System.out.println("==============================================");
     }
 
     // ─── CHECK IF ITEM CODE EXISTS IN MENU ───────────────────
@@ -97,21 +125,49 @@ public class OnlineFoodSimulationApp {
     }
 
     // ─── PRINT ITEMIZED RECEIPT ───────────────────────────────
-    static void printReceipt(String[][] menu, String[] itemCodes, int[] quantities, int subtotal, int discount) {
-        System.out.println("\n======== RECEIPT ========");
+    static void printReceipt(
+            String[][] menu,
+            String[] itemCodes,
+            int[] quantities,
+            int subtotal,
+            int discount
+    ) {
+
+        System.out.println("\n================ RECEIPT ================");
+
         for (int i = 0; i < itemCodes.length; i++) {
-            String itemName  = getItemName(menu, itemCodes[i]);
-            int    itemPrice = getItemPrice(menu, itemCodes[i]);
-            int    lineTotal = itemPrice * quantities[i];
-            System.out.println(String.format("%-20s x%-3d PKR %d",
-                    itemName, quantities[i], lineTotal));
+
+            String itemName = getItemName(menu, itemCodes[i]);
+            int itemPrice = getItemPrice(menu, itemCodes[i]);
+            int lineTotal = itemPrice * quantities[i];
+
+            System.out.println(
+                    padRight(itemName, 25) +
+                            "x" + quantities[i] +
+                            "   PKR " + lineTotal
+            );
         }
-        System.out.println("-------------------------");
-        System.out.println(String.format("%-24s PKR %d", "Subtotal :", subtotal));
-        System.out.println(String.format("%-24s PKR %d", "Discount :", discount));
-        System.out.println(String.format("%-24s PKR %d", "Final Bill :", (subtotal - discount)));
-        System.out.println("=========================");
-        System.out.println("Thank you for your order!");
+
+        System.out.println("________________________________________");
+
+        System.out.println(
+                padRight("Subtotal", 25) +
+                        "PKR " + subtotal
+        );
+
+        System.out.println(
+                padRight("Discount", 25) +
+                        "PKR " + discount
+        );
+
+        System.out.println(
+                padRight("Final Bill", 25) +
+                        "PKR " + (subtotal - discount)
+        );
+
+        System.out.println("========================================");
+        System.out.println("       Thank you for your order!");
+        System.out.println("========================================");
     }
 
     // ─── MAIN METHOD ──────────────────────────────────────────
