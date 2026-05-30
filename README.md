@@ -6,7 +6,8 @@ A console-based Java application simulating a real-world multi-restaurant food o
 
 ## 📸 Sample Output
 
-<img width="428" height="411" alt="image" src="https://github.com/user-attachments/assets/5df74134-2f0e-4d47-96c5-de4574783910" />
+<img width="523" height="916" alt="carbon (2)" src="https://github.com/user-attachments/assets/f0848a11-f1ff-4d8b-b85e-f8f94e0bf33b" />
+
 
 ---
 
